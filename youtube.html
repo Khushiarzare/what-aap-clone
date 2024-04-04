@@ -1,3 +1,4 @@
+
 <html>
 <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -15,7 +16,7 @@
          justify-content: space-between;
          width: 100%;
          height: 50px;
-         background-color:white;
+         background-color:black;
      }
     #container{
          display: flex;
@@ -28,9 +29,10 @@
      #viewbar{
          width: 85%;
          height: 100vh;
-         background-color:white;
+         background-color:black;
     }
-     #search{        
+     #search{ 
+         color: white;       
          padding-left: 15px;
          margin-top: 10px;
          width: 400px;
@@ -52,10 +54,12 @@
      #dots{
         display: flex;
         padding-top: 10px;
+        color: white;
      }
      #leftdot{
         display: flex;
         margin-left:10px ;
+        color: white;
         
      }
      #you{
@@ -102,7 +106,7 @@
       border: solid thin grey;
      }
      #home{
-      background-color: grey;
+      background-color: rgb(56, 54, 54);
       color: white;
       margin-left: 15px;
       margin-top: 5px;
@@ -111,9 +115,10 @@
 
      }
      .line{
+      color: white;
       border-radius: 5px;
-      border: solid thin grey;
-      background-color: grey;
+      border: solid thin rgb(58, 56, 55);
+      background-color: rgb(58, 56, 56);
       padding: 4px;
       height: 15px;
 
@@ -121,9 +126,10 @@
      #view{
       display: flex;
       justify-content: space-between;
-      border: solid thin grey;
+      border-bottom: solid thin rgb(102, 100, 100);
       height: 60px;
       padding-top: 7px;
+      background-color: black;
      }
      #show{
       color: rgb(170, 162, 162);
@@ -147,9 +153,9 @@
       justify-content: space-around;
      }
      .photo{
-       padding-top: 25px;
-       width:250px;
-       height:170px;
+       padding-top: 35px;
+       width:300px;
+       height:200px;
        border-radius: 20px;
      }
      .photo2{
@@ -157,17 +163,31 @@
       height: 30px;
       padding-top: 5px;
      }
-     .div{
+     .div1{
       display: flex;
+     }
+     .div2{
+      margin-left: 10px;
+      color: white;
+     }
+     .div3{
+      font-size: 11px;
+      margin-left: 40px;
+      color: white;
+     }
+     #last{
+      padding-bottom: 20px;
+      border-bottom: solid thin grey;
      }
 </style>
 </head>
 <body>
 <div id="main">
-  <div id="header">
-     <div id="leftdot"><i class="fa-solid fa-bars" style="padding-top: 15px;" ></i>
-            <div id="you"><i class="fa-brands fa-youtube" ></i> </div>
-              <p style="color:black;"><b>YOUTUBE</b></p>
+<div id="header">
+     <div id="leftdot">
+              <i class="fa-solid fa-bars" style="padding-top: 15px;" ></i>
+             <div id="you"><i class="fa-brands fa-youtube" ></i> </div>
+             <div style="padding-bottom: 20px;"> <p style="color:white;"><b>YOUTUBE</b><sup>IN</sup></p></div>
      </div>
      <div id="mic" >
          <div id="search">Search<i class="fa-solid fa-magnifying-glass" style=" padding-left:330px; padding-top: 2px;" ></i>
@@ -178,21 +198,21 @@
         <div><i class="fa-solid fa-list" style="margin-right:10px; padding-top: 5px;"></i></div>
         <div class="signin"><i class="fa-solid fa-circle-user"></i> Sign in</div>
      </div>
-  </div>
-     <div id="container">
-          <div id="sidebar">
+ </div>
+ <div id="container">
+    <div id="sidebar">
             <div id="home"><i class="fa-solid fa-house" style="padding-right: 25px; padding-left: 5px; " ></i>Home</div><br>
             <div class="side"><i class="fa-solid fa-play" style="padding-right: 25px;"></i>Shorts</div><br>
             <div class="side"><i class="fa-solid fa-crown" style="padding-right: 25px;"></i>Subscriptions</div><br>
        <div id="box1">
              <div class="side"><i class="fa-brands fa-square-youtube" style="padding-right: 25px;"></i>You</div><br>
              <div class="side"><i class="fa-solid fa-clock-rotate-left" style="padding-right: 25px;"></i>Histroy</div><br>
-            </div>
-            <div id="box2">
+       </div>
+       <div id="box2">
                 <p style="color: white;"> Sign in to like video,<br>comment and Subsrcibe</p>
                   <div class="signin"><i class="fa-solid fa-circle-user" ></i> Sign in</div>
-            </div>
-            <div>
+       </div>
+       <div>
                <p style="color: white; margin-left: 15px;">Explore</p>
                <div class="side"><i class="fa-brands fa-free-code-camp" style="padding-right: 25px;"></i>Trending</div><br>
                <div class="side"><i class="fa-solid fa-cart-shopping" style="padding-right: 25px;"></i>Shopping</div><br>
@@ -206,10 +226,10 @@
                <div class="side"><i class="fa-solid fa-graduation-cap" style="padding-right: 25px;"></i>Learning</div><br>
                <div class="side"><i class="fa-solid fa-shirt" style="padding-right: 25px;"></i>Fashion & Beauty</div><br>
                <div class="side"><i class="fa-solid fa-podcast" style="padding-right: 25px;"></i>Podcasts</div><br>
-            </div>
-          </div>
-         <div id="viewbar">
-               <div id="view">
+       </div>
+    </div>
+    <div id="viewbar">
+    <div id="view">
                   <div class="line">All</div>
                   <div  class="line">Music</div>
                   <div  class="line">Mr.bean</div>
@@ -228,32 +248,114 @@
                   <div class="line">Computer Science</div>
                   <div class="line">></div>
                  
-               </div>
-               <div id="more"><div id="show">Show More </div>
-               </div>
-               <div class="line2">
-                      <div class="square"><img src="taarak mehta.jpg"  class="photo">
-                           <div ><img src="sony tv.jpg" class="photo2"></div>
-                      </div>
-                      <div class="square"> <img src="allu arjun.jpg"  class="photo" >
-                            <div ><img src="goldmine.jpg" class="photo2"></div>
-                      </div>
-                      <div class="square"> <img src="oggy.jpg"  class="photo">
-                            <div ><img src="sony tv.jpg" class="photo2"></div>
-                      </div>
-                      <div class="square"> <img src="sita ram.jpg" class="photo" >
-                             <div ><img src="goldmine.jpg" class="photo2"></div>  
-                      </div>
-                      <div class="square"><img src="mashup.jpg"  class="photo">
-                        <div  class="div1"><div><img src="mtv.png" class="photo2" style="border: solid thin blue;"></div>
-                           <div>Love Mashup|Slowed+Reverb|<br>Full Trending lofi Song 2023<br>Music Hospitalliy<br>
-                           541K Views - 3 weeks ago</div>
-                        </div>
-                 </div>
-               </div>
-         </div>
     </div>
-</div>
+                      <div id="more">
+                      <div id="show">Show More <i class="fa-solid fa-chevron-down"></i></div>
+                      </div>
+    <div class="line2">
+                      <div class="square">
+                            <img src="taarak mehta.jpg"  class="photo">
+                         <div  class="div1">
+                            <div>
+                            <img src="sony tv.jpg" class="photo2">
+                            </div>
+                            <div class="div2">Tarak Mehta ka Ulta Chashma|TV Show|<br>Full Episodes|</div>
+                         </div>
+                            <div class="div3">Sony TV<br>
+                            959k Views - 5August 2023
+                            </div>
+                      </div>
+                      <div class="square">
+                            <img src="oggy.jpg"  class="photo">
+                         <div  class="div1">
+                             <div><img src="sony tv.jpg" class="photo2">
+                             </div>
+                             <div class="div2">Oggy and The Cockroaches|Cartoon|<br>Seasons 4-Episodes 239|
+                             </div>
+                         </div> 
+                           <div class="div3">Sony TV<br>
+                           899k Views - 60 weeks ago</div>
+                      </div>
+                      <div class="square">
+                            <img src="sita ram.jpg" class="photo" >
+                         <div  class="div1">
+                            <div><img src="goldmine.jpg" class="photo2"></div>
+                            <div class="div2">Sita Ram | South Movie |<br>Full movie hindi Dubbed 2019|</div>
+                        </div>
+                            <div class="div3">South Movie<br>
+                            541K Views - 4 years ago
+                            </div>
+                      </div>
+                      <div class="square">
+                            <img src="mashup.jpg"  class="photo">
+                          <div  class="div1">
+                             <div><img src="mtv.png" class="photo2" style="border: solid thin blue;"></div>
+                            <div class="div2">Love Mashup|Slowed+Reverb|<br>Full Trending lofi Song 2023|</div>
+                          </div>
+                            <div class="div3">Music Hospitalliy<br>
+                           541K Views - 3 weeks ago
+                            </div>
+                      </div>
+    </div>
+    <div id="last">
+               <div class="line2">
+                  <div class="square">
+                     <img src="allu arjun.jpg"  class="photo">
+                     <div  class="div1">
+                     <div>
+                     <img src="goldmine.jpg" class="photo2">
+                     </div>
+                     <div class="div2">Soldiers allu arjun|South Movie|<br>Full Movie Hindi Dubbed|</div>
+                   </div>
+                     <div class="div3">South Movie<br>
+                     50.5B Views - 5 May 2018
+                     </div>
+               </div>
+                  <div class="square">
+                        <img src="haunman.jpg"  class="photo">
+                        <div  class="div1">
+                        <div>
+                        <img src="sanskar.jpeg" class="photo2">
+                        </div>
+                        <div class="div2"> Shree Haunman chailsa|S Kumar|<br>Full chailsa</div>
+                      </div>
+                        <div class="div3">T-series<br>
+                        12.7B Views - 12 years ago
+                        </div>
+                  </div>
+                  <div class="square">
+                     <img src="mr bean.jpg"  class="photo">
+                     <div  class="div1">
+                     <div>
+                     <img src="sony tv.jpg" class="photo2">
+                     </div>
+                     <div class="div2">MR BEAN|Comedy Cartoon|<br>Full Episodes| </div>
+                   </div>
+                     <div class="div3">Cartoon<br>
+                     31.5B Views - 80 week ago
+                     </div>
+               </div>
+               <div class="square">
+                  <img src="baba.jpg"  class="photo">
+                  <div  class="div1">
+                  <div>
+                  <img src="sanskar.jpeg" class="photo2">
+                  </div>
+                  <div class="div2">Sath Humara kon banega|bhajan Sandhya|<br>Full Bhajan|</div>
+                </div>
+                  <div class="div3">Baba shyam<br>
+                  50.5B Views - 25 May 2022
+                  </div>
+            </div>
+        
+               </div>
+    </div>
+                   <div id="more">
+               <div id="show">Show More <i class="fa-solid fa-chevron-down"></i></div>
+                   </div>
 
+    </div>
+ </div>
+</div>
 </body>
 </html>
